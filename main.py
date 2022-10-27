@@ -11,8 +11,6 @@ import argparse
 from datetime import datetime
 from typing import List
 
-from icecream import ic
-
 
 def get_arg(args, arg_name, default_value, argtype=str):
     return args.get(arg_name, type=argtype) if arg_name in args else default_value
